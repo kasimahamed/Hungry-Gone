@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Commonfunctions.LoadPreferences(MainActivity.this);
         if (Commonfunctions.logged.equals("Logged")){
             startActivity(new Intent(MainActivity.this,Home.class));
+            finish();
         }
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
